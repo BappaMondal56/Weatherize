@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    background-image: linear-gradient(to bottom, #0c0c0c, #121212, #181818, #1f1f1f, #262626);
+    font-family: sans-serif;
+    color: #ffffff;
+    position: relative;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+main {
+    width: 350px;
+    height: max-content;
+    min-height: 300px;
+    background-color: #1e1e1e;
+    border-radius: 30px;
+    box-shadow: 0 30px 50px #000000;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main form label {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    border: 1px solid #5552;
+    border-radius: 30px;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-bar input, 
+.search-bar button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.search-bar input::placeholder {
+    color: #aaaaaa;
+}
+
+.search-bar i {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+main .result {
+    padding-top: 20px;
+    text-align: center;
+}
+
+main .result .name {
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main .temperature img {
+    width: 150px;
+    filter: drop-shadow(0 10px 50px #000000);
+}
+
+main .temperature figcaption {
+    font-size: 3em;
+}
+
+main .description {
+    padding: 10px 0 30px;
+}
+
+main ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+main li {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-image: linear-gradient(to bottom, transparent 50%, #00000030 50%);
+    font-weight: bold;
+    font-size: small;
+}
+
+main ul li i {
+    font-size: 2em;
+    margin: 20px 0;
+    display: block!important;
+}
+
+main li:nth-child(2) {
+    background-color: #b56291;
+}
+
+main li:nth-child(3) {
+    background-color: #48567b;
+}
+
+main li:nth-child(4) {
+    background-color: #ff8c00;
+}
+
+main.error {
+    animation: errorEffect 0.3s linear 1;
+}
+
+.error-message {
+    display: none;
+    color: #ff6b6b;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main.show-error .error-message {
+    display: block;
+}
+
+@keyframes errorEffect {
+    0% {
+        transform: translate(10px, 5px)
+    }
+    25% {
+        transform: translate(-5px, 0)
+    }
+    50% {
+        transform: translate(8px, 2px)
+    }
+    75% {
+        transform: translate(-2px, 5px)
+    }
+    100% {
+        transform: translate(0, 0); 
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+    font-size: small;
+}
+
+footer p {
+    color: #ffffff;
+    font-style: italic;
+}
+
+
+
+.feels-like {
+    font-size: 0.9em;
+    color: #aaaaaa;
+}
