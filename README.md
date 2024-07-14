@@ -63,9 +63,9 @@ License
 Distributed under the MIT License. See LICENSE.txt for more information.
 
 Contact
-Your Name - @your_twitter - your_email@example.com
+Bappa Aditya Mondal - spidey2020amazing@gmail.com
 
-Project Link: https://github.com/yourusername/weatherize
+Project Link: https://github.com/BappaMondal56/Weatherize
 
 
-Make sure to replace placeholders (like `yourusername`, `your_twitter`, `your_email@example.com`) with your actual information.
+
